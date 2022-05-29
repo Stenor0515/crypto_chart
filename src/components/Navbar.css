@@ -1,0 +1,27 @@
+.navbar.navbar-expand-lg.navbar-light {
+  background-color: #ff6ab5 !important;
+}
+
+.nav-bar {
+  background-color: #ff6ab5 !important;
+}
+
+.nav-text {
+  color: #fff !important;
+}
+
+.nav-logo1 {
+  font-weight: bolder;
+  color: #c340b2 !important;
+}
+
+.nav-logo2 {
+  font-weight: 800;
+  font-size: 25px !important;
+  margin-right: 30px;
+}
+
+.form-control {
+  background-color: #ff7ebd;
+  border: none;
+}

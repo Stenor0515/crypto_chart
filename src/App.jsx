@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
 import callAPI from "./utils";
 
 function App() {
@@ -106,17 +107,20 @@ function App() {
 	};
 
 	return (
-		<div className='px-3 mt-1'>
-			{isLoading ? (
-				<h6 className='value animate__animated animate__flash animate__slow text-center text-primary'> loading ...</h6>
-			) : (
-				<>
-					<h2 id='last-price' className='text-center text-primary animate__animated'>
-						$ {latestPrice}
-					</h2>
-					<div id='chart' className='p-0 m-0'></div>
-				</>
-			)}
+		<div>
+			<Navbar />
+			<div className='px-3 mt-1'>
+				{isLoading ? (
+					<h6 className='value animate__animated animate__flash animate__slow text-center text-primary'> loading ...</h6>
+				) : (
+					<>
+						<h2 id='last-price' className='text-center text-primary animate__animated'>
+							ETH PRICE $ {latestPrice}
+						</h2>
+						<div id='chart' className='p-0 m-0'></div>
+					</>
+				)}
+			</div>
 		</div>
 	);
 }
